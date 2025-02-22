@@ -1,53 +1,68 @@
+:root {
+  --font-size: 30px;
+  --padding-small: 8px;
+  --padding-large: 14px;
+}
+
+* {
+  box-sizing: border-box; /*research*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 body {
   background-image: url("images/background.png");
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  font-size: 35px;
+  font-size: var(--font-size);
 }
 
 li {
   float: left;
-  font-size: 35px;
+  font-size: var(--font-size);
 }
 
 li a {
-  text-decoration: none;
   display: block;
   color: #5a4b42;
   text-align: center;
-  padding: 14px;
-  font-size: 35px;
+  padding: var(--padding-large);
+  font-size: var(--font-size);
 }
 
 li a:hover {
   background-color: grey;
   opacity: 0.3;
-  font-size: 35px;
+  font-size: var(--font-size);
 }
 
 .active {
   color: black;
-  font-size: 35px;
+  font-size: var(--font-size);
+}
+
+h1 {
+  text-align: center;
+  padding: var(--padding-large);
 }
 
 .grid-container {
-  margin-top: 2rem;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  padding: 10px;
+  padding: var(--padding-small);
   align-content: space-evenly;
 }
 
 .grid-container > div {
   background-color: #ab998d;
   color: #000;
-  padding: 10px;
+  padding: var(--padding-small);
   font-size: 30px;
   text-align: center;
 }
@@ -56,11 +71,11 @@ li a:hover {
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
-  padding-bottom: 8px;
+  padding: var(--padding-small);
   text-align: center;
   background-color: white;
-  width: 100%; 
-  max-width: 350px; 
+  width: 100%;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -70,29 +85,61 @@ li a:hover {
   border-top-right-radius: 25px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .card h2 {
   font-size: 26px;
+  padding: var(--padding-small);
 }
 
 .card h3,
 a {
   font-size: 20px;
+  padding: var(--padding-small);
 }
 
 a.button {
-  background-color: #ab998d;
   color: #000;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: var(--padding-small);
   border-radius: 8px;
   display: inline-block;
   font-size: 18px;
-  transition: background-color 0.3s ease;
 }
 
 a.button:hover {
+  background-color: #ebebe3;
+}
+
+.aici{
+  padding: 228px;
+}
+
+.join-message {
+  text-align: center;
+  font-size: 22px;
+  color: #5b1a0a;
+  padding: var(--padding-large);
+}
+
+#complete {
+  text-align: center;
+  padding: var(--padding-large);
+}
+
+.complete-button {
+  text-align: center;
+  background-color: #a48d7d;
+  padding: var(--padding-large);
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+a.complete-button:hover {
   background-color: #ebebe3;
 }
 
@@ -111,20 +158,43 @@ a.button:hover {
   }
 
   .card h3 {
-    font-size: 32px;
-  }
-
-  .card a {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   a.button {
-    background-color: #ab998d;
+    font-size: 40px;
+  }
+
+  .aici{
+    padding: 228px;
+  }
+  
+  .join-message {
+    text-align: center;
+    font-size: 22px;
+    color: #5b1a0a;
+    padding: var(--padding-large);
+  }
+  
+  #complete {
+    text-align: center;
+    padding: var(--padding-large);
+  }
+  
+  .complete-button {
+    text-align: center;
+    background-color: #a48d7d;
+    padding: var(--padding-large);
     color: #000;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 36px;
+    display: inline-block;
+    font-size: 18px;
   }
+  
+  a.complete-button:hover {
+    background-color: #ebebe3;
+  }  
 }
 
 @media (min-width: 1001px) and (max-width: 1500px) {
@@ -146,11 +216,42 @@ a.button:hover {
   }
 
   .card a {
-    font-size: 35px;
+    font-size: 30px;
   }
+  
+  .aici{
+    padding: 228px;
+  }
+  
+  .join-message {
+    text-align: center;
+    font-size: 22px;
+    color: #5b1a0a;
+    padding: var(--padding-large);
+  }
+  
+  #complete {
+    text-align: center;
+    padding: var(--padding-large);
+  }
+  
+  .complete-button {
+    text-align: center;
+    background-color: #a48d7d;
+    padding: var(--padding-large);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 18px;
+  }
+  
+  a.complete-button:hover {
+    background-color: #ebebe3;
+  }  
 }
 
 footer {
-  padding: 10px;
+  padding: var(--padding-large);
   text-align: center;
 }

@@ -9,7 +9,7 @@ if (!document.querySelector('script[src="https://assets.calendly.com/assets/exte
 
 // Așteaptă încărcarea completă a paginii
 document.addEventListener("DOMContentLoaded", function () {
-    let contactButton = document.getElementById("contact-button");
+    let contactButton = document.querySelector(".card .button");
 
     if (contactButton) {
         contactButton.addEventListener("click", function (event) {
