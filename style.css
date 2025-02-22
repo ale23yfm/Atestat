@@ -35,18 +35,10 @@ li a:hover {
   font-size: 35px;
 }
 
-.img-logo {
-  justify-content: center;
-  text-align: center;
-  float: right;
-  height: 100px;
-  width: 250px;
-}
-
 .grid-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 coloane pe ecrane mari */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 10px;
   padding: 10px;
   align-content: space-evenly;
@@ -67,8 +59,8 @@ li a:hover {
   padding-bottom: 8px;
   text-align: center;
   background-color: white;
-  width: 100%; /* Cardul va ocupa întreaga lățime a containerului */
-  max-width: 350px; /* Lățimea maximă a cardului este acum mai mare */
+  width: 100%; 
+  max-width: 350px; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -104,27 +96,57 @@ a.button:hover {
   background-color: #ebebe3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
   }
 
   .card {
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .card h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .card h3 {
-    font-size: 16px;
+    font-size: 32px;
+  }
+
+  .card a {
+    font-size: 45px;
+  }
+
+  a.button {
+    background-color: #ab998d;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 36px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1001px) and (max-width: 1500px) {
   .grid-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .card h2 {
+    font-size: 45px;
+  }
+
+  .card h3 {
+    font-size: 27px;
+  }
+
+  .card a {
+    font-size: 35px;
   }
 }
 
