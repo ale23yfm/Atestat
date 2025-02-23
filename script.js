@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault(); // Oprește comportamentul default al linkului
 
             // Inițializează widgetul Calendly
-            Calendly.initPopupWidget({ url: "https://calendly.com/youthgoalbusiness/30min" });
+            Calendly.initPopupWidget({ url: "https://calendly.com/voluntariat-meditatii/30min" });
         });
     }
 });
