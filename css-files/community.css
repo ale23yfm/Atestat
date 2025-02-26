@@ -1,0 +1,70 @@
+/* It is created for specifir patterns in index.html */
+
+:root {
+  --font-size: 30px;
+  --padding-small: 8px;
+  --padding-large: 14px;
+}
+
+* {
+  box-sizing: border-box; /*research*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.grid-container {
+  margin-top: 30px;
+  display: grid;
+  gap: 10px;
+  padding: var(--padding-small);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-container > div {
+  background-color: #ab998d;
+  padding: var(--padding-small);
+  font-size: 30px;
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: var(--padding-small);
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-card {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 26px;
+  padding: var(--padding-small);
+}
+
+.card h3,
+a {
+  font-size: 20px;
+  padding: var(--padding-small);
+}
+
+a.button {
+  padding: var(--padding-small);
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+a.button:hover {
+  background-color: #ebebe3;
+}

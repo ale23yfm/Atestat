@@ -1,3 +1,22 @@
+/* It is created for mobile patterns */
+
+:root {
+  --font-size: 30px;
+  --padding-small: 8px;
+  --padding-large: 14px;
+}
+
+* {
+  box-sizing: border-box; /*research*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  list-style-type: none;
+  overflow: hidden;
+}
+
 @media (max-width: 1000px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
@@ -25,19 +44,16 @@
   }
 
   .join-message {
-    text-align: center;
     font-size: 22px;
     color: #5b1a0a;
     padding-top: 56px;
   }
 
   #complete {
-    text-align: center;
     padding-top: 60px;
   }
 
   .complete-button {
-    text-align: center;
     background-color: #a48d7d;
     padding-top: var(--padding-large);
     color: #000;
@@ -83,19 +99,16 @@
   }
 
   .join-message {
-    text-align: center;
     font-size: 22px;
     color: #5b1a0a;
     padding: var(--padding-large);
   }
 
   #complete {
-    text-align: center;
     padding: var(--padding-large);
   }
 
   .complete-button {
-    text-align: center;
     background-color: #a48d7d;
     padding: var(--padding-large);
     color: #000;

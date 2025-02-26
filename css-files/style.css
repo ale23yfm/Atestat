@@ -1,0 +1,47 @@
+/* It is created for general patterns */
+
+:root {
+  --font-size: 30px;
+  --padding-small: 8px;
+  --padding-large: 14px;
+}
+
+* {
+  box-sizing: border-box; /*research*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("../images/background.png");
+}
+
+li {
+  float: left;
+  font-size: var(--font-size);
+}
+
+li a {
+  display: block;
+  padding: var(--padding-large);
+  font-size: var(--font-size);
+}
+
+li a:hover {
+  background-color: grey;
+  opacity: 0.3;
+  font-size: var(--font-size);
+}
+
+.unselected {
+  color: #5a4b42;
+}
+
+h1 {
+  padding: var(--padding-large);
+}
