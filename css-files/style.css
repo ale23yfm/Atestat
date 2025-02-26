@@ -14,11 +14,14 @@
   text-align: center;
   color: #000;
   list-style-type: none;
-  overflow: hidden;
 }
 
 body {
   background-image: url("../images/background.png");
+}
+
+ul{
+  overflow: hidden;
 }
 
 li {
