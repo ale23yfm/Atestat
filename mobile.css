@@ -1,0 +1,111 @@
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+  }
+
+  .card {
+    max-width: 80%;
+  }
+
+  .card h2 {
+    font-size: 40px;
+  }
+
+  .card h3 {
+    font-size: 35px;
+  }
+
+  a.button {
+    font-size: 40px;
+  }
+
+  .text {
+    padding-top: 550px;
+  }
+
+  .join-message {
+    text-align: center;
+    font-size: 22px;
+    color: #5b1a0a;
+    padding-top: 56px;
+  }
+
+  #complete {
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .complete-button {
+    text-align: center;
+    background-color: #a48d7d;
+    padding-top: var(--padding-large);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 50px;
+  }
+
+  a.complete-button:hover {
+    background-color: #ebebe3;
+  }
+
+  footer {
+    padding-top: 790px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .card h2 {
+    font-size: 45px;
+  }
+
+  .card h3 {
+    font-size: 27px;
+  }
+
+  .card a {
+    font-size: 30px;
+  }
+
+  .aici {
+    padding: 228px;
+  }
+
+  .join-message {
+    text-align: center;
+    font-size: 22px;
+    color: #5b1a0a;
+    padding: var(--padding-large);
+  }
+
+  #complete {
+    text-align: center;
+    padding: var(--padding-large);
+  }
+
+  .complete-button {
+    text-align: center;
+    background-color: #a48d7d;
+    padding: var(--padding-large);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  a.complete-button:hover {
+    background-color: #ebebe3;
+  }
+}
