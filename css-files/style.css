@@ -20,6 +20,10 @@ body {
   background-image: url("../images/background.png");
 }
 
+#header{
+  background-color: rgb(130, 74, 203);
+}
+
 ul{
   overflow: hidden;
 }
