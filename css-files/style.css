@@ -21,7 +21,7 @@ body {
 }
 
 #header{
-  background-color: rgb(130, 74, 203);
+  background-color: #ebebe3;
 }
 
 ul{
@@ -64,7 +64,6 @@ h1 {
   text-align: center;
   cursor: pointer;
   background-color: #c9b09f;
-  color: #000;
   font-size: 50px;
   display: flex;
   justify-content: center;
@@ -73,9 +72,8 @@ h1 {
 
 #btn-scroll-to-top:hover{
   background-color: #ab998d;
-  color: #000; 
 } 
 
 #footer{
-  background-color: rgb(130, 74, 203);
+  background-color: #ebebe3;
 }
