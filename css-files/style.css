@@ -52,3 +52,30 @@ li a:hover {
 h1 {
   padding: var(--padding-large);
 }
+
+#btn-scroll-to-top{
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  right: 0rem;
+  bottom: 1rem;
+  border-radius: 50%;
+  visibility: hidden;
+  text-align: center;
+  cursor: pointer;
+  background-color: #c9b09f;
+  color: #000;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-scroll-to-top:hover{
+  background-color: #ab998d;
+  color: #000; 
+} 
+
+#footer{
+  background-color: rgb(130, 74, 203);
+}
