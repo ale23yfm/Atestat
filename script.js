@@ -1,7 +1,7 @@
 // Verifică dacă scriptul Calendly există deja pentru a nu-l încărca de mai multe ori
-if (!document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')) {
+if (!document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.css"]')) {
     let script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.src = "https://assets.calendly.com/assets/external/widget.css";
     script.type = "text/javascript";
     script.async = true;
     document.head.appendChild(script);
