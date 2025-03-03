@@ -41,7 +41,7 @@ function displayCards(data) {
 // Funcția pentru a încărca datele din JSON
 async function fetchData() {
     try {
-        const response = await fetch('data/data.json'); // calea corectă
+        const response = await fetch('./data/data.json'); // calea corectă
         if (!response.ok) {
             throw new Error('Eroare la încărcarea datelor.');
         }
