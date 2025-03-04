@@ -9,10 +9,10 @@ if (!document.querySelector('script[src="https://assets.calendly.com/assets/exte
 
 // Așteaptă încărcarea completă a paginii
 document.addEventListener("DOMContentLoaded", function () {
-  let contactButton = document.querySelector(".card .button");
+  let contactButtons = document.querySelectorAll(".card .button");
   
-  if (contactButton) {
-      contactButton.addEventListener("click", function (event) {
+  contactButtons.forEach(button => {
+      button.addEventListener("click", function (event) {
           event.preventDefault(); // Oprește comportamentul default al linkului
 
           // Inițializează widgetul Calendly cu linkul corect
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
               url: "https://calendly.com/voluntariat-meditatii/30min"
           });
       });
-  }
+  });
 });
 
 // Funcționalitatea pentru butonul de scroll
