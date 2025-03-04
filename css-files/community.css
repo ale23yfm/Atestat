@@ -1,3 +1,4 @@
+
 /* It is created for specifir patterns in index.html */
 
 :root {
@@ -58,6 +59,7 @@ a {
 }
 
 a.button {
+  background-color: #a48d7d;
   padding: var(--padding-small);
   border-radius: 8px;
   display: inline-block;
